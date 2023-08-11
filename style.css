@@ -1,0 +1,25 @@
+#git-delete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#delete-confirm{
+    font-size: 22px;
+    border: 3px solid rgb(15, 9, 13);
+    border-radius: 7px;
+    padding: 6px 12px;
+}
+#btn-delete{
+    padding: 7px 19px;
+    margin: 8px 4px;
+}
+#btn-delete:hover{
+    padding: 7px 19px;
+    margin: 8px 4px;
+    border: 2px solid seagreen;
+    font-size: 17px;
+    color: wheat;
+    background-color: rgb(17, 10, 10);
+    border-radius: 5px 10px;
+    box-shadow: 3px 3px 8px rgb(136, 141, 128);
+}

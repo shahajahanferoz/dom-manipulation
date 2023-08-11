@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM manipulattion</title>
+</head>
+<body>
+    <div id="git-delete">
+        <h1 id="git-project">MY Github Project</h1>
+        <input id="delete-confirm" type="text" placeholder="please type project delete"/>
+        <button id="btn-delete" disabled>Delete</button>
+    </div>
+
+    <script>
+        document.getElementById('delete-confirm').addEventListener('keyup', function(event){
+            const text = event.target.value;
+            const deleteButton = document.getElementById('btn-delete');
+            if (text == 'project delete') {
+                deleteButton.removeAttribute('disabled');
+            }
+            else{
+
+                deleteButton.setAttribute('disabled');
+                deleteButton.style.removeProperty= "hover"
+            }
+        })
+        document.getElementById('btn-delete').addEventListener('click', (event)=>{
+            const gitProject = document.getElementById('git-project');
+            gitProject.style.display = "none";
+        })
+    </script>
+</body>
+</html>
